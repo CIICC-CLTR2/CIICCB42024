@@ -1,4 +1,4 @@
-package task_1_2_1;
+package tasks.task_1_2_1;
 
 public class MyDate {
 
