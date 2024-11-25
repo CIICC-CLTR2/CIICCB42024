@@ -1,11 +1,9 @@
 package tasks;
-
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task119 {
 
-    public static char op;
+    public  char op;
 
     public static void main(String[] args) {
 
@@ -16,7 +14,7 @@ public class Task119 {
         System.out.print("Enter 2nd Number: ");
         n2 = getValidNumber(n2);
         op = getValidOperator(op);
-        
+   
         System.out.println(getResult(n1, n2, op));
 
     }
