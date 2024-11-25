@@ -1,4 +1,4 @@
-package tasks.task_1_2_1;
+package tasks.task_1_2_2;
 public class MyDate {
 
     public static void main(String[] args) {
