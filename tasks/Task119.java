@@ -60,7 +60,7 @@ public class Task119 {
         String operator;
 
         while (true) {
-            System.out.print("Enter Operation to be used " + B + YELLOW  + "[ + , - , x, / ]: "+ R);
+            System.out.print("Enter Operator to be used " + B + YELLOW  + "[ + , - , x, / ]: "+ R);
             operator = scanner.nextLine();
             op = operator.charAt(0);
 
