@@ -72,14 +72,14 @@ public class Task119 {
         }
     }
 
-    public static double getValidNumber(double n1, String prompt) {
+    public static double getValidNumber(double num, String prompt) {
         Scanner scan = new Scanner(System.in);
 
         while (true) {
             System.out.print(prompt);
             try {
-                n1 = scan.nextDouble();
-                return n1;
+                num = scan.nextDouble();
+                return num;
 
             } catch (Exception e) {
                 System.out.println("\nInvalid Input! ");
