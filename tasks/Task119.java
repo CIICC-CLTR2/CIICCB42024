@@ -7,6 +7,7 @@ public class Task119 {
     public static char op;
     public static final String RED = "\u001B[31m"; // Red text
     public static final String GREEN = "\u001B[32m"; // Green text
+    public static final String YELLOW = "\u001B[33m"; // Green text
     public static final String B = "\u001B[1m"; // Bold text
     public static final String U = "\u001B[4m"; // Underlined text
     public static final String R = "\u001B[0m"; // Reset formatting
@@ -27,19 +28,10 @@ public class Task119 {
 
     public static String getResult(double n1, double n2, char c) {
         String returnResult = "";
-        if (c == '+') {
-            returnResult = "\nThe Sum of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B
-                    + getSum(n1, n2);
-        } else if (c == '-') {
-            returnResult = "\nThe Difference of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B
-                    + getDifference(n1, n2);
-        } else if (c == 'x' || c == 'X') {
-            returnResult = "\nThe Product of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B
-                    + getProduct(n1, n2);
-        } else if (c == '/') {
-            returnResult = "\nThe Quotient of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B
-                    + String.format("%.2f", getQuotient(n1, n2));
-        }
+        if (c == '+') {returnResult = "\nThe Sum of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getSum(n1, n2);} 
+        else if (c == '-') {returnResult = "\nThe Difference of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getDifference(n1, n2);}
+        else if (c == 'x' || c == 'X') {returnResult = "\nThe Product of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getProduct(n1, n2);} 
+        else if (c == '/') {returnResult = "\nThe Quotient of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + String.format("%.2f", getQuotient(n1, n2));}
         return returnResult + "\n";
     }
 
@@ -64,7 +56,7 @@ public class Task119 {
         String operator;
 
         while (true) {
-            System.out.print("Enter Operation to be used [ + , - , x, / ]: ");
+            System.out.print("Enter Operation to be used " + B + YELLOW  + "[ + , - , x, / ]: "+ R);
             operator = scanner.nextLine();
             op = operator.charAt(0);
 
