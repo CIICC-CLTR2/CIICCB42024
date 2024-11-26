@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Task119 {
 
-    public  char op;
+    public static char op;
 
     public static void main(String[] args) {
 
