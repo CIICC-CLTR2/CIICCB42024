@@ -28,10 +28,14 @@ public class Task119 {
 
     public static String getResult(double n1, double n2, char c) {
         String returnResult = "";
-        if (c == '+') {returnResult = "\nThe Sum of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getSum(n1, n2);} 
-        else if (c == '-') {returnResult = "\nThe Difference of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getDifference(n1, n2);}
-        else if (c == 'x' || c == 'X') {returnResult = "\nThe Product of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + getProduct(n1, n2);} 
-        else if (c == '/') {returnResult = "\nThe Quotient of " + n1 + B + GREEN + " " + op + R + " " + n2 + " is: " + R + RED + B + String.format("%.2f", getQuotient(n1, n2));}
+        if (c == '+')
+        {returnResult = "\nThe Sum of \n\t  " + n1 + B + GREEN + " \n\t" + op + R + " " + n2 + "\n\t---------\n\t  " + R + RED + B + getSum(n1, n2);} 
+        else if (c == '-') 
+        {returnResult = "\nThe Difference of \n\t\t" + n1 + B + GREEN + "\n\t      " + op + R + " " + n2 + "\n\t      ----------\n\t        " + R + RED + B + getDifference(n1, n2);}
+        else if (c == 'x' || c == 'X') 
+        {returnResult = "\nThe Product of \n\t      " + n1 + B + GREEN + "\n\t    " + op + R + " " + n2 + "\n\t    ---------- \n\t      " + R + RED + B + getProduct(n1, n2);} 
+        else if (c == '/') 
+        {returnResult = "\nThe Quotient of \n\t       " + n1 + B + GREEN + "\n\t     " + op + R + " " + n2 + "\n\t      ----------\n\t       " + R + RED + B + String.format("%.2f", getQuotient(n1, n2));}
         return returnResult + "\n";
     }
 
