@@ -19,7 +19,7 @@ public class Task119 {
 
     }
 
-    private static String getResult(double n1, double n2, char c) {
+    public static String getResult(double n1, double n2, char c) {
         String returnResult = "";
         if (c == '+') 
         {returnResult = "The Sum is: " + getSum(n1, n2);} 
