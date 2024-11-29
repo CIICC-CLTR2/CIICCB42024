@@ -18,7 +18,7 @@ public class LamdasPercentage {
         double result=0.0;
 
         try {
-            System.out.print("Enter Price to be discounted: ");
+            System.out.print("\nEnter Price to be discounted: ");
             regPrice = scan.nextDouble();
                 
             System.out.print("Enter discount of [10, 20, 50] only:  ");
@@ -43,7 +43,7 @@ public class LamdasPercentage {
 
         };
  
-        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? "invalid Dsicount input":result);
+        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? "invalid Dsicount input":"The discounted Price of:" + regPrice +" is: " +result);
     
  
     }
