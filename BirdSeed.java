@@ -1,4 +1,4 @@
-package programming_challlenges;
+
   class StringBuilders {
       public static StringBuilder work(StringBuilder a, StringBuilder b) {
              a = new StringBuilder("a");
