@@ -39,7 +39,7 @@ class Caldereta extends Afritada {
                             "Pork","Liver","Tomato Sauce","Water",
                             "Sugar","Pepper","Raisins","Bell","Pepper","Salt", };
 
-      System.out.println("Caldereta = " + java.util.Arrays.toString(Ingredients) +"🍲 \n"); 
+      System.out.println("Menudo = " + java.util.Arrays.toString(Ingredients) +"🍲 \n"); 
     }
  }
 
@@ -50,7 +50,7 @@ class Caldereta extends Afritada {
                           "Star Anise", "Cinnamon Stick", "Dried Cloves", "Soysauce",
                           "Vinegar", "Bell Pepper", "Saging na Saba", "Salt & Pepper",};
    
-      System.out.println("Caldereta = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
+      System.out.println("Mechado = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
    } 
 }
  
