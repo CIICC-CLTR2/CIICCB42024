@@ -13,20 +13,21 @@ public class Task_1_3_1 {
       meal3.showIngredients();
       meal4.showIngredients();
     
+    
   }
 }
  
 class Afritada {
       public void showIngredients() {
       String[] Ingredients = {"Tomato Sauce","Meat"};
-      System.out.println("Afritada = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
+      System.out.println("\nAfritada = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
   }
 }
 
 class Caldereta extends Afritada {
       public void showIngredients() {
       String[] Ingredients = {"Tomato Sauce","Meat","Potatoes & Carrots","Tomato Paste",
-                            "Liver Spread","Raisins","Hotdog","Siling Labuyo","Cheese"};
+                              "Liver Spread","Raisins","Hotdog","Cheese"};
       
       System.out.println("Caldereta = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
     }
@@ -35,9 +36,8 @@ class Caldereta extends Afritada {
  class Menudo extends Afritada {
 
       public void showIngredients(){
-      String[] Ingredients = {"Oil","Potatoes","Carrot","Garlic","Onion",
-                            "Pork","Liver","Tomato Sauce","Water",
-                            "Sugar","Pepper","Raisins","Bell","Pepper","Salt", };
+      String[] Ingredients = {"Tomato Sauce","Meat","Potatoes & Carrots",
+                              "Liver Spread","Raisins","Hotdog",};
 
       System.out.println("Menudo = " + java.util.Arrays.toString(Ingredients) +"🍲 \n"); 
     }
@@ -46,9 +46,7 @@ class Caldereta extends Afritada {
  class Mechado extends Afritada {
     
     public void showIngredients(){
-    String[] Ingredients = {"Beef","Onion",  "Garlic", "Tomato Sauce" ,"Banana Catsup",
-                          "Star Anise", "Cinnamon Stick", "Dried Cloves", "Soysauce",
-                          "Vinegar", "Bell Pepper", "Saging na Saba", "Salt & Pepper",};
+    String[] Ingredients = {"Tomato Sauce","Meat","Potatoes & Carrots","Tomato Paste",};
    
       System.out.println("Mechado = " + java.util.Arrays.toString(Ingredients) +"🍲 \n");
    } 
