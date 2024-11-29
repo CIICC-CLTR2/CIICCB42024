@@ -17,11 +17,17 @@ public class LamdasPercentage {
         double discount = 0.0;
         double result=0.0;
 
-        System.out.print("Enter Price to be discounted: ");
-        regPrice = scan.nextDouble();
+        try {
+            System.out.print("Enter Price to be discounted: ");
+            regPrice = scan.nextDouble();
+                
+            System.out.print("Enter discount of [10, 20, 50] only:  ");
+             discount = scan.nextDouble();
             
-        System.out.print("Enter discount of [10, 20, 50] only:  ");
-         discount = scan.nextDouble();
+        } catch (Exception e) {
+            System.out.println("Please input Valid Numbers");
+            return;
+        }
     
         Discounts discounts = (p, d) -> {
             double newPrice = 0.0;
