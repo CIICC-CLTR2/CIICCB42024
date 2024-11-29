@@ -1,5 +1,5 @@
 import java.util.*;
-public class Returntype {
+public class Try2 {
     void getEmployees(){
         ArrayList<Employees> employees= new ArrayList<>();
         employees.add(new Employees("Marco",19000)); 
@@ -8,7 +8,7 @@ public class Returntype {
         System.out.println(employees);
     }
     public static void main(String[] args) {
-        Returntype rt = new Returntype();
+        Try2 rt = new Try2();
         rt.getEmployees();
         // System.out.println(rt.getEmployees());
     }

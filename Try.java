@@ -14,19 +14,19 @@
                 System.out.println("s3 = " + s3);
               }
     }
-    public class BirdSeed {
+    public class Try {
       private int numberBags;
       boolean call;
-      public BirdSeed() {
+      public Try() {
         this(2);
                call = false;
               // LINE 2
        }
-      public BirdSeed(int numberBags) {
+      public Try(int numberBags) {
       this.numberBags = numberBags;
        }
       public static void main(String[] args) {
-             BirdSeed seed = new BirdSeed();
+             Try seed = new Try();
              System.out.println(seed.numberBags);
 } } 
  
