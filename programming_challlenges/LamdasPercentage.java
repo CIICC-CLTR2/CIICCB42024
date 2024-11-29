@@ -11,33 +11,29 @@ public class LamdasPercentage {
     }
 
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
        
         double regPrice = 0.0;
         double discount = 0.0;
         double result=0.0;
 
- 
-
-            System.out.print("Enter Price to be discounted: ");
-            regPrice = scan.nextDouble();
+        System.out.print("Enter Price to be discounted: ");
+        regPrice = scan.nextDouble();
             
-            System.out.print("Enter discount of [10, 20, 50] only:  ");
-            discount = scan.nextDouble();
+        System.out.print("Enter discount of [10, 20, 50] only:  ");
+         discount = scan.nextDouble();
     
-        
         Discounts discounts = (p, d) -> {
-            double price = 0.0;
+            double newPrice = 0.0;
 
-                if (d == 10) {
-                    price = p * d/100;
-                } else if (d == 20) {
-                    price = p * d/100;
-                } else if (d == 50) {
-                    price = p * d/100;
-                }
-            return price  ;
+                if (d == 10) 
+                {newPrice = p * d/100;}
+                else if (d == 20)
+                {newPrice = p * d/100;}
+                else if (d == 50)
+                {newPrice = p * d/100;}
+            
+                return newPrice;
 
         };
  
