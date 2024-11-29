@@ -21,7 +21,7 @@ public class LamdasPercentage {
             System.out.print("\nEnter Price to be discounted: ");
             regPrice = scan.nextDouble();
                 
-            System.out.print("Enter discount of [10, 20, 50] only:  ");
+            System.out.print("Enter discount of [10, 20, 50]% only:  ");
              discount = scan.nextDouble();
             
         } catch (Exception e) {
