@@ -1,6 +1,6 @@
 package programming_challlenges;
-
-import java.util.Scanner;
+import static tasks.Task119.*;
+ import java.util.Scanner;
 
 public class LamdasPercentage {
 
@@ -43,7 +43,7 @@ public class LamdasPercentage {
 
         };
  
-        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? "invalid Dsicount input\n":"DISCOUNTED Price of: " + regPrice +" is: " +result+"\n");
+        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? "invalid Dsicount input\n":"DISCOUNTED Price of: "+GREEN + regPrice + R +" is: " +RED +result+"\n");
     
  
     }
