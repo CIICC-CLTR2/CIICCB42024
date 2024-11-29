@@ -76,7 +76,7 @@ public class Task119 {
         Scanner scan = new Scanner(System.in);
 
         while (true) {
-            System.out.print(prompt);
+            System.out.print(prompt); 
             try {
                 num = scan.nextDouble();
                 return num;
