@@ -25,7 +25,7 @@ public class LamdasPercentage {
              discount = scan.nextDouble();
             
         } catch (Exception e) {
-            System.out.println(YELLOW +"Please input Valid Numbers");
+            System.out.println(YELLOW +"Please input Valid Numbers\n");
             return;
         }
     
