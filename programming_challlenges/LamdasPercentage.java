@@ -43,7 +43,7 @@ public class LamdasPercentage {
 
         };
  
-        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? "invalid Dsicount input\n":"DISCOUNTED Price of: "+GREEN + regPrice + R +" is: " +RED +result+"\n");
+        System.out.println((result=discounts.getDiscountedPrice(regPrice, discount))==0.0 ? YELLOW +"invalid Dsicount input\n":"DISCOUNTED Price of: "+GREEN + regPrice + R +" is: " +RED +result+"\n");
     
  
     }
