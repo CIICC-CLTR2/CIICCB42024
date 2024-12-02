@@ -3,11 +3,11 @@ import java.util.Arrays;
 
 public class Task120 {
 
-    public static String sumOfComulativenumbers(double... numbers) {
-        double sums = 0.0;
+    public static String sumOfComulativenumbers(int... numbers) {
+        int sums = 0;
        
-        for (double n : numbers) {
-            double sum = 0.0;
+        for (int n : numbers) {
+            int sum = 0;
          
             for (int x = 1; x < n + x; x++, n--) {
                 sum += n;
