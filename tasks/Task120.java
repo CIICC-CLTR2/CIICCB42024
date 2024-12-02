@@ -1,7 +1,7 @@
 package tasks;
 import java.util.Arrays;
 
-public class Task_1_2_0 {
+public class Task120 {
 
     public static String sumOfComulativenumbers(double... numbers) {
         double sums = 0.0;
